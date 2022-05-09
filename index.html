@@ -144,14 +144,26 @@
         <input type="file" id="fileInput" STYLE="background-color: #FF6600;">
       </div>
       <div id="messageDisplayArea"></div>
+     
       
       <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
+     <!-- here I am making my second canvas to display the modified version of the image-->
+     <!-- I do this by calling the variable I created in the javascript area above, and setting its elements, like border, size, etc. -->
+     <canvas id = "mysecondCanvas" width=600 height=500 style="border: 1px solid #000000;"</canvas>
       <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
         var canvas = document.getElementById('myCanvas');
         var context = canvas.getContext("2d");
         context.font = '20pt Calibri';
         context.fillStyle = "black";
         context.fillText("Original image will go here", 10, 20);
+       
+       /* This script initiates the second cavas and puts the text on the canvas "modifiedCanvas" */
+       var secondCanvas = document.getElementById('mysecondCanvas');
+       var secondContext = secondCanvas.getContext("2d");
+       secondContext.font = '20pt Calibri';
+       secondContext.fillStyle = "black";
+       secondContext.fillText("Modified image will go here", 10, 20);
+       
       </script>
 
     </div><!-- /content -->
