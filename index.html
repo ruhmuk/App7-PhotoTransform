@@ -101,6 +101,11 @@
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
+          var secondCanvas = document.getElementById('mysecondCanvas');
+          var secondContext = secondCanvas.getContext("2d");
+          var imageData = context.getImageData(0,0, secondCanvas.width, secondCanvas.height);
+          var data = imageData.data;
+         
           
           
           
