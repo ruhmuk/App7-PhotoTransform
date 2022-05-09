@@ -99,7 +99,7 @@
 
           /*  +++++++++++++++ BEGIN IMAGE PROCESSING +++++++++++++++ */
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
+          /* below I create the second canvas, to be put next to the first one and it will contain the modified image*/
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
           var secondCanvas = document.getElementById('mysecondCanvas');
           var secondContext = secondCanvas.getContext("2d");
@@ -157,7 +157,7 @@
         context.fillStyle = "black";
         context.fillText("Original image will go here", 10, 20);
        
-       /* This script initiates the second cavas and puts the text on the canvas "modifiedCanvas" */
+       /* This script calls the second canvas and puts the image on the canvas "modifiedCanvas" */
        var secondCanvas = document.getElementById('mysecondCanvas');
        var secondContext = secondCanvas.getContext("2d");
        secondContext.font = '20pt Calibri';
